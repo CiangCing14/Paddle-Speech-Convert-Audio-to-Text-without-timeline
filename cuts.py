@@ -2,7 +2,7 @@ import auditok
 import os,time
 
 
-def qiefen(path, ty='audio', mmin_dur=1, mmax_dur=49000, mmax_silence=1, menergy_threshold=55):
+def qiefen(path, ty='audio', mmin_dur=1, mmax_dur=49000, mmax_silence=1, menergy_threshold=65):
 
     file = path
 
