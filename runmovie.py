@@ -7,7 +7,7 @@ def extract_audio(videos_file_path):
           p = videos_file_path.split('.mp3')[0]
           my_clip.write_audiofile(op:='audios/%s'%p.split('/')[-1] + '_video.mp3')
           print(op)
-for a in os.walk('/media/a/aa0c6e82-c513-458a-ba7f-a7d591ff95fc/Music'):
+for a in os.walk('[原音频所在目录]'):
     a[2].sort(reverse=True)
     for b in a[2]:
         p = ('%s/%s'%(a[0],b)).split('.mp3')[0]
